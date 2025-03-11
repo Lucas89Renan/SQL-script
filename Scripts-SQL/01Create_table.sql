@@ -1,0 +1,10 @@
+
+USE Primeiro_banco
+
+	CREATE TABLE Clientes
+	(
+		ID_CLIENTE INT,
+		NOME VARCHAR(25),
+		DATA_CADASTRO DATETIME,
+		EMAIL VARCHAR(25)
+	)

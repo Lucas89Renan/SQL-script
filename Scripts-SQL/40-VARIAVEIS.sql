@@ -1,0 +1,24 @@
+DECLARE @SEILA BIGINT
+
+SET @SEILA = 12345678910
+
+
+SELECT  @SEILA NUMERO_ALEATORIO
+
+
+
+
+USE ContosoRetailDW
+
+
+DECLARE @KEY_ONLINE BIGINT
+SET @KEY_ONLINE = 19560520
+
+SELECT 
+	 OnlineSalesKey
+	,ProductKey
+	,SalesQuantity
+	,SalesAmount	
+
+FROM FactOnlineSales
+WHERE OnlineSalesKey = @KEY_ONLINE

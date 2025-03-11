@@ -1,0 +1,11 @@
+SELECT [TrackId]
+      ,[Name]
+      ,[AlbumId]
+      ,[MediaTypeId]
+      ,[GenreId]
+      ,[Composer]
+      ,[Milliseconds]
+      ,[Bytes]
+      ,[UnitPrice]
+	  ,ROW_NUMBER() OVER(ORDER BY Milliseconds) ROW_NUMBER_
+  FROM [Chinook].[dbo].[Track]

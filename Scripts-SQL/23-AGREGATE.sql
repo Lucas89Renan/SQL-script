@@ -1,0 +1,15 @@
+
+
+USE ContosoRetailDW
+
+
+SELECT 
+	 COUNT(SalesKey) AS TOTAL_VENDAS
+	,SUM(SalesAmount) AS TOTAL_VALOR_VENDA
+	,AVG(SalesAmount) AS MEDIA_VALOR
+	,MIN(SalesAmount) AS MENOR_VALOR
+	,MAX(SalesAmount) AS MAIOR_VALOR
+
+FROM FactSales
+--GROUP BY 
+

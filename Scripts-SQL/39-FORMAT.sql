@@ -1,0 +1,13 @@
+
+
+USE ContosoRetailDW
+
+
+
+
+SELECT 
+	 GETDATE()
+	 --CONVERTE A DATA
+	,FORMAT(GETDATE(), 'HH') DATA_
+	,FORMAT(GETDATE(), 'yy-MM-dd') DATA_HOJE_FORMATADA
+	,FORMAT(GETDATE(), 'yyyy-MM-dd HH:mm:ss') HOJE_COM_HORA

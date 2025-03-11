@@ -1,0 +1,19 @@
+-- LEFT JOIN TRAS TUDO QUE ESTÁ NA TABELA DA ESQUERDA E TUDO QUE TEM EM COMUM COM A TABELA DA DIREITA.
+SELECT 
+	COUNT(DISTINCT(ProductKey))
+
+FROM DimProduct
+
+SELECT 
+	COUNT(DISTINCT(ProductKey))
+
+	FROM FactSales
+
+
+SELECT DISTINCT
+	 DP.ProductKey
+	,DP.ProductDescription
+	,DP.ProductName
+	FROM DimProduct AS DP
+
+LEFT JOIN FactSales AS FS ON FS.ProductKey = DP.ProductKey

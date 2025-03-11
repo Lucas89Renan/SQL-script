@@ -1,0 +1,5 @@
+
+USE Primeiro_banco
+
+ALTER TABLE Clientes
+ALTER COLUMN EMAIL VARCHAR(30)
